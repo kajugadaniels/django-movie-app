@@ -1,9 +1,24 @@
-import React from 'react'
+import { Fragment, memo } from "react";
 
-const Loader = () => {
+// img
+import LoaderGif from '/assets/images/loader.gif'
+
+const Loader = memo(() => {
     return (
-        <div>Loader</div>
-    )
-}
+        <Fragment>
+            <div className="loader simple-loader animate__animated">
+                <div className="loader-body">
+                    <img
+                        src={LoaderGif}
+                        alt="loader"
+                        className="img-fluid"
+                        width="300"
+                    />
+                </div>
+            </div>
+        </Fragment>
+    );
+});
 
-export default Loader
+Loader.displayName = "Loader";
+export default Loader;
