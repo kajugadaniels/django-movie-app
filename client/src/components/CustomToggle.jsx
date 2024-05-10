@@ -1,9 +1,20 @@
 import React from 'react'
 
-const CustomToggle = () => {
-    return (
-        <div>CustomToggle</div>
-    )
-}
+//react-router-dom
+import { Link } from 'react-router-dom'
 
-export default CustomToggle
+const CustomToggle = React.forwardRef(({ children, variant, onClick }, ref) => (
+    <Link
+        to="/"
+        ref={ref}
+        onClick={(e) => {
+            e.preventDefault();
+            onClick(e);
+        }}
+        className={variant}
+    >
+        {children}
+
+    </Link>
+));
+export default CustomToggle;
