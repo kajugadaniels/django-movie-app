@@ -4,6 +4,8 @@ import Loader from './Loader'
 import MerchandiseFooter from './MerchandiseFooter'
 import FooterDefault from './FooterDefault'
 import SettingOffCanvas from './SettingOffCanvas'
+import Logo from './Logo'
+import CustomToggle from './CustomToggle'
 
 export {
     HeaderDefault,
@@ -12,4 +14,6 @@ export {
     MerchandiseFooter,
     FooterDefault,
     SettingOffCanvas,
+    Logo,
+    CustomToggle,
 }
